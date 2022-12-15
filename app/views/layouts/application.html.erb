@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Draft</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+  <body>
+  <header>
+    <%= image_tag("Banner-980-300.png", :alt => "Banner") %>
+    <ul>
+      <li><a href=" <%= ttt_path %> ">Tic-Tac-Toe</a></li>
+      <li><a href="">Restaraunt</a></li>
+      <li><a href=""></a>Todo</li>
+      <li><a href=""></a>Weather</li>
+      <li><a href="">Testing</a></li>
+      <li><a href="">Battleship</a></li>
+    </ul>
+  </header>
+  <div class = "game_cont">
+    <%= yield %>
+  </div>
+  <footer>
+    <h3>serving you since 2023</h3>
+  </footer>
+  </body>
+</html>

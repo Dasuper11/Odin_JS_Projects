@@ -1,0 +1,21 @@
+
+#game {
+  width: 720px;
+  height: 720px;
+  background-image: url(tictactoe_background_720x720.png);
+}
+#game h1{
+position: absolute;
+}
+#container{
+  display: grid;
+  grid-template-rows: 3fr 3fr 3fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#container button{
+  width: 80px;
+  height: 80px;
+  margin: 80px;
+
+  opacity: 20%;
+}
